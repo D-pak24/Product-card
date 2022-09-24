@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  -webkit-box-shadow: 13px 13px 17px -7px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 13px 13px 17px -7px rgba(0, 0, 0, 0.42);
+  box-shadow: 13px 13px 17px -7px rgba(0, 0, 0, 0.42);
+  display: inline-flex;
+  background-color: white;
+  width: 550px;
+  height: 370px;
+  border-radius: 10px;
+}
+.img-holder {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-holder img {
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  height: 100%;
+}
+.details {
+  width: 90%;
+  padding: 25px;
+}
+.details .product-header {
+  font-family: "Fraunces";
+  color: hsl(228, 12%, 48%);
+  font-size: 0.7em;
+  font-family: "Montserrat";
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.details .product-name {
+  font-family: "Fraunces";
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+.details .product-description {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  padding-bottom: 15px;
+  line-height: 20px;
+}
+
+.product-price {
+  font-family: "Fraunces";
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: hsl(158, 36%, 37%);
+  padding-bottom: 15px;
+}
+.details .product-price .old-price {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.cart {
+  width: 100%;
+  height: 38px;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  background-color: hsl(158, 36%, 37%);
+  cursor: pointer;
+}
+.cart-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.cart-holder img {
+  width: 12px;
+}
+.add-cart {
+  letter-spacing: 0.5px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.cart-holder a {
+  text-decoration: none;
+}
+.cart:hover {
+  background-color: hsl(158, 91%, 9%);
+}
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces", sans-serif;
+}
+@media (max-width: 548px) {
+  .card {
+    margin: 1em;
+    width: 350px;
+    height: 600px;
+    flex-direction: column;
+  }
+  .img-holder {
+    width: 100%;
+    height: 50%;
+  }
+  .img-holder img {
+    border-radius: 10px 10px 0 0;
+    content: url(images/image-product-mobile.jpg);
+  }
+}
